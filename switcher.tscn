@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://ccrngdftxj7lv"]
+
+[ext_resource type="Script" path="res://Switcher.gd" id="1_3dy4r"]
+
+[node name="Switcher" type="Node2D"]
+script = ExtResource("1_3dy4r")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 155.0
+offset_bottom = 162.0
+theme_override_colors/font_color = Color(0, 0, 1, 1)
+theme_override_font_sizes/font_size = 32
+text = "i am the switcher Object"
+autowrap_mode = 2

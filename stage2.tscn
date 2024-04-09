@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://brdnxwayom3wk"]
+
+[ext_resource type="PackedScene" uid="uid://ccrngdftxj7lv" path="res://switcher.tscn" id="1_05c6a"]
+
+[sub_resource type="GDScript" id="GDScript_w8efm"]
+script/source = "extends Node2D
+
+@export var nextScene: Resource
+
+func _ready():
+	if (nextScene== null):
+		print(\"you need to add in Switcher a Scene in \\\"nextScene\\\"\")
+		get_tree().quit()
+	else:
+		print(\"Active Scene: \", get_tree().current_scene.name)
+		print(\"next Scene path: \", self.nextScene.resource_path)
+
+func _process(delta):
+	if ((Input.is_action_pressed(\"next\"))):
+		print(\"any Key pressed\")
+		MyGlobal.loadNewScene(self.nextScene.resource_path)
+"
+
+[node name="stage2" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+offset_left = 352.0
+offset_top = 131.0
+offset_right = 818.0
+offset_bottom = 320.0
+theme_override_font_sizes/font_size = 32
+text = "you are here: Stage 2
+
+press \"any\" key for next Scene
+press ESC for quit"
+
+[node name="Switcher" parent="." instance=ExtResource("1_05c6a")]
+script = SubResource("GDScript_w8efm")

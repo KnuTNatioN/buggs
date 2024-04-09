@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://b6nyj58ghvwii"]
+
+[ext_resource type="PackedScene" uid="uid://ccrngdftxj7lv" path="res://switcher.tscn" id="2_jde55"]
+
+[node name="stage1" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+offset_left = 247.0
+offset_top = 133.0
+offset_right = 445.0
+offset_bottom = 229.0
+theme_override_font_sizes/font_size = 32
+text = "this is Scene 1
+
+press \"any\" key for next Scene
+press ESC for quit"
+
+[node name="Switcher" parent="." instance=ExtResource("2_jde55")]

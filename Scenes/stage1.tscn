@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://b6nyj58ghvwii"]
 
-[ext_resource type="PackedScene" uid="uid://ccrngdftxj7lv" path="res://switcher.tscn" id="2_jde55"]
+[ext_resource type="PackedScene" uid="uid://ccrngdftxj7lv" path="res://Scenes/switcher.tscn" id="2_jde55"]
 
 [node name="stage1" type="Node2D"]
 

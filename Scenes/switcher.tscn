@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://ccrngdftxj7lv"]
 
-[ext_resource type="Script" path="res://Switcher.gd" id="1_3dy4r"]
+[ext_resource type="Script" path="res://Scenes/Switcher.gd" id="1_3dy4r"]
 
 [node name="Switcher" type="Node2D"]
 script = ExtResource("1_3dy4r")
